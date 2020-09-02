@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/startPage.css">
+    <link rel="stylesheet" href="css/createTodo.css">
+    <script rel="script" src="js/start.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <nav>
+        <img alt="Image of fake HIOF logo" src="images/hiof.png"/>
+        <p>User user</p>
+    </nav>
+    <main>
+        <div>
+            <button id="addTodoBtn">+ Todo</button>
+        </div>
+        <!-- Todotitles -->
+        <section id="todoList">
+            <article>
+                <p class="titleForTodo">Todotitle</p>
+                <p class="descriptionForTodo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis ex in augue consectetur egestas nec in justo. Integer dictum tortor nec tincidunt dapibus. Nunc quis nisl quis nibh vehicula elementum.</p>
+                <div>
+                    <button class="deleteTodo">Delete</button>
+                    <button class="completeTodo">Complete</button>
+                </div>
+            </article>
+            <article>
+                <p class="titleForTodo">Todotitle</p>
+                <p class="descriptionForTodo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis ex in augue consectetur egestas nec in justo. Integer dictum tortor nec tincidunt dapibus. Nunc quis nisl quis nibh vehicula elementum.</p>
+                <div>
+                    <button class="deleteTodo">Delete</button>
+                    <button class="completeTodo">Complete</button>
+                </div>
+            </article>
+            <article>
+                <p class="titleForTodo">Todotitle</p>
+                <p class="descriptionForTodo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis ex in augue consectetur egestas nec in justo. Integer dictum tortor nec tincidunt dapibus. Nunc quis nisl quis nibh vehicula elementum.</p>
+                <div>
+                    <button class="deleteTodo">Delete</button>
+                    <button class="completeTodo">Complete</button>
+                </div>
+            </article>
+        </section>
+        <section id="completedTodos">
+            <p>Completed todos</p>
+            <div>
+                <div>
+                    <input type="checkbox" id="checkbox_FilterByDate">
+                    <label for="checkbox_FilterByDate">Filter by date</label>
+                </div>
+            </div>
+            <div id="listOfCompletedTodos">
+                <article class="firstLineOnListOfCompletedTodos">
+                    <p class="title">Title</p>
+                    <p class="author">Author</p>
+                    <p class="description">Description</p>
+                    <p class="completedDate">Completed date</p>
+                </article>
+                <article>
+                    <p class="title">Todotitle</p>
+                    <p class="author">Author author</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis ex in augue consectetur egestas nec in justo. Integer dictum tortor nec tincidunt dapibus. Nunc quis nisl quis nibh vehicula elementum.</p>
+                    <p class="completedDate">22.12.20</p>
+                </article>
+                <article>
+                    <p class="title">Todotitle</p>
+                    <p class="author">Author author</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis ex in augue consectetur egestas nec in justo. Integer dictum tortor nec tincidunt dapibus. Nunc quis nisl quis nibh vehicula elementum.</p>
+                    <p class="completedDate">22.11.20</p>
+                </article>
+                <article>
+                    <p class="title">Todotitle</p>
+                    <p class="author">Author author</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis ex in augue consectetur egestas nec in justo. Integer dictum tortor nec tincidunt dapibus. Nunc quis nisl quis nibh vehicula elementum.</p>
+                    <p class="completedDate">22.10.20</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="beforeCreateTodo">
+        <section id="createTodo">
+            <div id="notExitable"> <!--English....-->
+                <div>
+                    <p>New todo</p>
+                    <p id="exitCreateTodo" class="exit">X</p>
+                </div>
+                <form>
+                    <label for="titleOnNewTODO">Title</label>
+                    <input type="text" id="titleOnNewTODO">
+                    <label for="descriptionOnNewTODO">Description</label>
+                    <textarea id="descriptionOnNewTODO"></textarea>
+                    <label for="authorOnNewTODO">Author</label>
+                    <input type="text" id="authorOnNewTODO">
+                    <input type="submit" value="Create">
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
