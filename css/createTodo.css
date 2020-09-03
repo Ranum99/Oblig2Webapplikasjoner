@@ -24,6 +24,12 @@ body {
     width: 25%;
 }
 
+#createTodo > div > p#feilmelding {
+    color: red;
+    padding-top: 20px;
+    display: none;
+}
+
 #createTodo > div > div {
     display: flex;
     flex-direction: row;
